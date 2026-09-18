@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(255, 225, 241);
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.cardGrados {
+    justify-content: center;
+    text-align: center;
+    max-width: 340px;
+    padding: 15px;
+    /* Modificar el vorde de cada una de las esquinas */
+    border-radius: 15px 0px 15px 0px;
+    background-color: rgba(138, 251, 234, 0.432);
+    box-shadow:
+        0 4px 20px rgba(9, 230, 127, 0.5),
+        0 1px 3px rgba(70, 174, 222, 0.9);
+
+}
+
+.btnDiseno {
+    border: none;
+    padding: 16px 32px;
+    color: white;
+    background:
+        linear-gradient(60deg, #ef2020, #efa609, #237d08,
+            #5aeea9, #00afe0, #2c3fe8,
+            #6513d8, #c200e0, #e82c8d);
+    border-radius: 50px;
+    /* Hace un zoom esto ayudara a que se vea el efecto del color del boton*/
+    background-size: 900%;
+    /*Hace un difumindao
+    filter: blur(1px);*/
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
+    /*animacion*/
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
